@@ -9,3 +9,13 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+### **I made the following changes to the original code:**
+
+1. Declared candidate with a default value of `TRIVIAL_PARTITION_KEY` to remove the redundant if-else statements for checking if candidate has a value.
+
+2. Combined the two if statements that check for the existence of event and its partitionKey property into a single if-else statement to make the code more concise and easier to follow.
+
+3. Moved the check for the type of candidate to before the check for its length to make the code flow more naturally.
+
+4. Added test cases to cover all branches of the code, including the
